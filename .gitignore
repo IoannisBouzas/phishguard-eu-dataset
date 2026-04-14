@@ -1,6 +1,10 @@
 node_modules/
 dist/
 *.db
+*.db-shm
+*.db-wal
 *.sqlite
 .env
 .DS_Store
+qa-*.png
+add_new_entries.py
