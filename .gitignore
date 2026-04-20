@@ -8,3 +8,5 @@ dist/
 .DS_Store
 qa-*.png
 add_new_entries.py
+.vercel
+.next

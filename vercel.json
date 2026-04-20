@@ -1,0 +1,15 @@
+{
+  "buildCommand": "npm run build:vercel",
+  "outputDirectory": "dist/public",
+  "framework": null,
+  "functions": {
+    "api/**/*.ts": {
+      "runtime": "@vercel/node@5"
+    }
+  },
+  "rewrites": [
+    { "source": "/api/websites/:id", "destination": "/api/websites/[id]" },
+    { "source": "/api/(.*)", "destination": "/api/$1" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
